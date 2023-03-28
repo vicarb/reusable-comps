@@ -2,11 +2,11 @@ import React from 'react';
 
 const Register = () => {
   return (
-    <div className="bg-sky-200 min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="bg-blue-100 py-10 mb-10">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h1 className="text-center text-3xl font-bold text-gray-900 mb-6">Register</h1>
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-        <form className="space-y-6">
+        <form className="space-y-6 py-4">
         <div className="mb-4">
                 <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
                 <input type="name" id="email" className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Name" />

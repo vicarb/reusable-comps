@@ -11,9 +11,13 @@ import Children from '@/components/Children/Children'
 import ChildrenHeader from '@/components/ChildrenHeader/ChildrenHeader'
 import ChildrenLayout from '@/components/ChildrenLayout/ChildrenLayout'
 import MetaData from '@/components/MetaData/MetaData'
+import Media from '@/components/Media/Media'
+import SliderComponent from '@/components/SliderComponent/SliderComponent'
+import Swipe from '@/components/Swipe/Swipe'
+
+
 
 const inter = Inter({ subsets: ['latin'] })
-
 
 export default function Home() {
   return (
@@ -21,12 +25,15 @@ export default function Home() {
       <MetaData/>
       <Navbar/>
       <ChildrenLayout header="Header title" subheader="Subheader text" />
-
-
+      
       <Content>
       <ChildrenHeader title="Header title" subtitle="Subheader text" />
-        <Children />
+      <Children />
+      
       </Content>
+      <div className='m-16'>
+        <Swipe/>
+      </div>
 
       <Login/>
       <Register/>
