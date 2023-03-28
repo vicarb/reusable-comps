@@ -8,6 +8,8 @@ import Login from '@/components/Login/Login'
 import Register from '@/components/Register/Register'
 import Content from '@/components/Content/Content'
 import Children from '@/components/Children/Children'
+import ChildrenHeader from '@/components/ChildrenHeader/ChildrenHeader'
+import ChildrenLayout from '@/components/ChildrenLayout/ChildrenLayout'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -21,9 +23,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-          <Content>
-      <Children />
-    </Content>
+      <ChildrenLayout header="Header title" subheader="Subheader text" />
+
+
+      <Content>
+      <ChildrenHeader title="Header title" subtitle="Subheader text" />
+        <Children />
+      </Content>
 
       <Login/>
       <Register/>
