@@ -1,5 +1,5 @@
 import Children from "../Children/Children";
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 interface ContentProps {
     children: ReactNode;
