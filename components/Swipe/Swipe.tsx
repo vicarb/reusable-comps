@@ -1,6 +1,7 @@
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -40,16 +41,16 @@ const Swipe = () => {
   }}
 >
   <SwiperSlide>
-    <Image src='https://picsum.photos/800/600?random=1' width={800} height={600} />
+    <Image  src="https://picsum.photos/800/600?random=1" width={800} height={600} />
   </SwiperSlide>
   <SwiperSlide>
-    <Image src='https://picsum.photos/800/600?random=2' width={800} height={600} />
+    <Image src="https://picsum.photos/800/600?random=2" width={800} height={600} />
   </SwiperSlide>
   <SwiperSlide>
-    <Image src='https://picsum.photos/800/600?random=3' width={800} height={600} />
+    <Image src="https://picsum.photos/800/600?random=3" width={800} height={600} />
   </SwiperSlide>
   <SwiperSlide>
-    <Image src='https://picsum.photos/800/600?random=5' width={800} height={600} />
+    <Image src="https://picsum.photos/800/600?random=5" width={800} height={600} />
   </SwiperSlide>
 </Swiper>
 
