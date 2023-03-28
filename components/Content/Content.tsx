@@ -1,7 +1,11 @@
 import Children from "../Children/Children";
 import React from 'react';
 
-const Content = ({ children }) => {
+interface ContentProps {
+    children: ReactNode;
+  }
+
+const Content = ({ children }: ContentProps) => {
     return (
       <div className="w-full h-full flex-grow flex-shrink-0 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
