@@ -41,16 +41,24 @@ const Swipe = () => {
   }}
 >
   <SwiperSlide>
-    <Image  src="https://picsum.photos/800/600?random=1" width={800} height={600} />
+  <div style={{borderRadius: '5px', overflow: 'hidden'}}>
+    <Image alt="12312312" src="https://picsum.photos/800/600?random=1" width={800} height={600} />
+    </div>
   </SwiperSlide>
   <SwiperSlide>
-    <Image src="https://picsum.photos/800/600?random=2" width={800} height={600} />
+  <div style={{borderRadius: '5px', overflow: 'hidden'}}>
+    <Image alt="123312312" src="https://picsum.photos/800/600?random=2" width={800} height={600} />
+    </div>
   </SwiperSlide>
   <SwiperSlide>
-    <Image src="https://picsum.photos/800/600?random=3" width={800} height={600} />
+  <div style={{borderRadius: '5px', overflow: 'hidden'}}>
+    <Image alt="123123122" src="https://picsum.photos/800/600?random=3" width={800} height={600} />
+    </div>
   </SwiperSlide>
   <SwiperSlide>
-    <Image src="https://picsum.photos/800/600?random=5" width={800} height={600} />
+    <div style={{borderRadius: '5px', overflow: 'hidden'}}>
+    <Image alt="1231231212" src="https://picsum.photos/800/600?random=5" width={800} height={600} />
+    </div>
   </SwiperSlide>
 </Swiper>
 

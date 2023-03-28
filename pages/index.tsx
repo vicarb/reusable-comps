@@ -11,8 +11,8 @@ import Children from '@/components/Children/Children'
 import ChildrenHeader from '@/components/ChildrenHeader/ChildrenHeader'
 import ChildrenLayout from '@/components/ChildrenLayout/ChildrenLayout'
 import MetaData from '@/components/MetaData/MetaData'
-import Media from '@/components/Media/Media'
-import SliderComponent from '@/components/SliderComponent/SliderComponent'
+
+
 import Swipe from '@/components/Swipe/Swipe'
 
 
