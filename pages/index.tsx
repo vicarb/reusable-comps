@@ -6,7 +6,8 @@ import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
 import Login from '@/components/Login/Login'
 import Register from '@/components/Register/Register'
-
+import Content from '@/components/Content/Content'
+import Children from '@/components/Children/Children'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -20,6 +21,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
+          <Content>
+      <Children />
+    </Content>
+
       <Login/>
       <Register/>
       <Footer/>
