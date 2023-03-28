@@ -10,8 +10,9 @@ import Content from '@/components/Content/Content'
 import Children from '@/components/Children/Children'
 import ChildrenHeader from '@/components/ChildrenHeader/ChildrenHeader'
 import ChildrenLayout from '@/components/ChildrenLayout/ChildrenLayout'
-const inter = Inter({ subsets: ['latin'] })
 import MetaData from '@/components/MetaData/MetaData'
+
+const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Home() {
