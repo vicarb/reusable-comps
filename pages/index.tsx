@@ -11,7 +11,7 @@ import Children from '@/components/Children/Children'
 import ChildrenHeader from '@/components/ChildrenHeader/ChildrenHeader'
 import ChildrenLayout from '@/components/ChildrenLayout/ChildrenLayout'
 import MetaData from '@/components/MetaData/MetaData'
-
+import TextImage from '@/components/TextImage/TextImage'
 
 import Swipe from '@/components/Swipe/Swipe'
 
@@ -34,6 +34,7 @@ export default function Home() {
       <div className='m-16'>
         <Swipe/>
       </div>
+      <TextImage/>
 
       <Login/>
       <Register/>
