@@ -15,6 +15,7 @@ import TextImage from '@/components/TextImage/TextImage'
 import ProductPage from '@/components/ProductPage/ProductPage'
 import DeliveryForm from '@/components/DeliveryForm/DeliveryForm'
 import ProfilePage from '@/components/ProfilePage/ProfilePage'
+import Post from '@/components/Post/Post'
 
 import Swipe from '@/components/Swipe/Swipe'
 
@@ -43,6 +44,13 @@ export default function Home() {
       <Login/>
       <Register/>
       <ProfilePage/>
+      <Post
+  title="My Awesome Post"
+  body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a odio elit. Pellentesque vitae elit nulla. Sed eget ipsum id metus rhoncus malesuada. In hac habitasse platea dictumst. Donec et massa auctor, interdum velit eu, iaculis mi."
+  author="John Doe"
+  date="March 27, 2023"
+/>
+
       <DeliveryForm/>
       <Footer/>
     </>
