@@ -1,13 +1,19 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-const ProductDetail = () => {
+interface ProductDetailProps {
+  name: string;
+  description: string;
+  price: number;
+}
+
+const ProductDetail = ({ name, description, price }: ProductDetailProps) => {
   const [quantity, setQuantity] = useState(1);
 
   const handleQuantityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setQuantity(e.target.value);
+    const newQuantity = parseInt(e.target.value);
+    setQuantity(newQuantity);
   };
-  
 
   return (
     <div className="flex flex-col md:flex-row bg-white rounded-lg p-4 md:p-6 max-w-xl mx-auto">
@@ -16,12 +22,9 @@ const ProductDetail = () => {
       </div>
       <div className="w-full md:w-1/2 md:pl-8 flex flex-col justify-between">
         <div>
-          <h2 className="text-2xl font-bold mb-4">Product Name</h2>
-          <p className="text-gray-600 text-base mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis semper nunc, id
-            vestibulum arcu feugiat sit amet. Sed vel augue sed urna fermentum bibendum.
-          </p>
-          <p className="text-gray-700 font-bold text-2xl mb-4">$99.99</p>
+          <h2 className="text-2xl font-bold mb-4">{name}</h2>
+          <p className="text-gray-600 text-base mb-4">{description}</p>
+          <p className="text-gray-700 font-bold text-2xl mb-4">${price.toFixed(2)}</p>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center">
           <label htmlFor="quantity" className="mr-4 mb-4 md:mb-0">
@@ -51,10 +54,10 @@ const ProductDetail = () => {
               +
             </button>
           </div>
-          </div>
-          <button className="bg-blue-500 text-white rounded-md px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-0">
-            Add to Cart
-          </button>
+        </div>
+        <button className="bg-blue-500 text-white rounded-md px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-0">
+          Add to Cart
+        </button>
       </div>
     </div>
   );
