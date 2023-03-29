@@ -9,7 +9,7 @@ const TextImage = () => {
         </h1>
       </div>
       <div className="flex-1 flex justify-center items-center">
-        <Image src="https://picsum.photos/800/600?random=6" width={1200} height={800} objectFit="cover" />
+        <Image alt="369"src="https://picsum.photos/800/600?random=6" width={1200} height={800} objectFit="cover" />
       </div>
     </div>
   )
