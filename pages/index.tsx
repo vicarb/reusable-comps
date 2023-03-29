@@ -13,6 +13,7 @@ import ChildrenLayout from '@/components/ChildrenLayout/ChildrenLayout'
 import MetaData from '@/components/MetaData/MetaData'
 import TextImage from '@/components/TextImage/TextImage'
 import ProductPage from '@/components/ProductPage/ProductPage'
+import DeliveryForm from '@/components/DeliveryForm/DeliveryForm'
 
 import Swipe from '@/components/Swipe/Swipe'
 
@@ -40,6 +41,7 @@ export default function Home() {
 
       <Login/>
       <Register/>
+      <DeliveryForm/>
       <Footer/>
     </>
   )
