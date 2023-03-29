@@ -4,9 +4,10 @@ import { useState } from 'react';
 const ProductDetail = () => {
   const [quantity, setQuantity] = useState(1);
 
-  const handleQuantityChange = (e) => {
+  const handleQuantityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuantity(e.target.value);
   };
+  
 
   return (
     <div className="flex flex-col md:flex-row bg-white rounded-lg p-4 md:p-6 max-w-xl mx-auto">
