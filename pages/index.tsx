@@ -12,6 +12,7 @@ import ChildrenHeader from '@/components/ChildrenHeader/ChildrenHeader'
 import ChildrenLayout from '@/components/ChildrenLayout/ChildrenLayout'
 import MetaData from '@/components/MetaData/MetaData'
 import TextImage from '@/components/TextImage/TextImage'
+import ProductPage from '@/components/ProductPage/ProductPage'
 
 import Swipe from '@/components/Swipe/Swipe'
 
@@ -35,6 +36,7 @@ export default function Home() {
         <Swipe/>
       </div>
       <TextImage/>
+      <ProductPage/>
 
       <Login/>
       <Register/>
