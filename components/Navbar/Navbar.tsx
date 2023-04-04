@@ -42,11 +42,11 @@ const Navbar: React.FC<NavbarProps> = ({ cartItems }) => {
             Blog
           </a>
         </div>
-        <div className="flex items-center ml-4">
-          <div className="flex items-center">
-            <FaShoppingCart size={20} className="text-white flex-1" />
+        <div className="flex items-center lg:ml-4">
+          <div className="flex items-center ">
+            <FaShoppingCart size={20} className="text-white flex-1 cursor-pointer" />
             {cartItems > 0 && (
-              <div className="bg-white text-gray-800 rounded-full px-2 ml-2">
+              <div className="bg-white text-gray-800 rounded-full px-2 ml-2 text-sm">
                 {cartItems}
               </div>
             )}
