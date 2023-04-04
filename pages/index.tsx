@@ -16,6 +16,7 @@ import ProductPage from '@/components/ProductPage/ProductPage'
 import DeliveryForm from '@/components/DeliveryForm/DeliveryForm'
 import ProfilePage from '@/components/ProfilePage/ProfilePage'
 import Post from '@/components/Post/Post'
+import Cart from '@/components/Cart/Cart'
 
 import Swipe from '@/components/Swipe/Swipe'
 
@@ -24,6 +25,11 @@ import Swipe from '@/components/Swipe/Swipe'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const cartItems = [
+    { id: 1, name: 'Item 1', price: 10, quantity: 2 },
+    { id: 2, name: 'Item 2', price: 20, quantity: 1 },
+    { id: 3, name: 'Item 3', price: 5, quantity: 4 },
+  ];
   return (
     <>
       <MetaData/>
@@ -52,6 +58,8 @@ export default function Home() {
 />
 
       <DeliveryForm/>
+      <Cart items={cartItems} />
+
       <Footer/>
     </>
   )
