@@ -33,7 +33,9 @@ export default function Home() {
   return (
     <>
       <MetaData/>
-      <Navbar/>
+
+      <Navbar cartItems={5} />
+
       <ChildrenLayout header="Header title" subheader="Subheader text" />
       
       <Content>

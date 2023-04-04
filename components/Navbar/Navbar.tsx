@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
+import { FaShoppingCart } from 'react-icons/fa';
 
-const Navbar = () => {
+interface NavbarProps {
+  cartItems: number;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ cartItems }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6 flex-grow self-center">
+      <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight">My App</span>
       </div>
       <div className="block lg:hidden">
@@ -37,10 +42,19 @@ const Navbar = () => {
             Blog
           </a>
         </div>
+        <div className="flex items-center ml-4">
+          <div className="flex items-center">
+            <FaShoppingCart size={20} className="text-white flex-1" />
+            {cartItems > 0 && (
+              <div className="bg-white text-gray-800 rounded-full px-2 ml-2">
+                {cartItems}
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-
