@@ -6,7 +6,7 @@ const Landing = () => {
     <div className="landing-page">
       <header className="header flex items-center justify-between py-4">
         <Image
-          src="/images/logo.png"
+          src="https://images.pexels.com/photos/6446709/pexels-photo-6446709.jpeg"
           alt="Digital Issue Solvers Logo"
           width={200}
           height={50}
