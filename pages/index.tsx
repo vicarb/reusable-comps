@@ -17,7 +17,7 @@ import DeliveryForm from '@/components/DeliveryForm/DeliveryForm'
 import ProfilePage from '@/components/ProfilePage/ProfilePage'
 import Post from '@/components/Post/Post'
 import Cart from '@/components/Cart/Cart'
-
+import Landing from '@/components/Landing/Landing'
 import Swipe from '@/components/Swipe/Swipe'
 
 
@@ -35,6 +35,7 @@ export default function Home() {
       <MetaData/>
 
       <Navbar cartItems={5} />
+      <Landing/>
 
       <ChildrenLayout header="Header title" subheader="Subheader text" />
       
