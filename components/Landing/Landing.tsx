@@ -1,97 +1,124 @@
-import React from 'react';
-import Image from 'next/image';
+import Head from 'next/head'
 
-const Landing = () => {
+export default function Landing() {
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <header className="bg-white py-4">
-        <div className="container mx-auto flex items-center justify-between">
-          <Image
-            src="/your-logo.png"
-            alt="Digital Issue Solvers Logo"
-            width={200}
-            height={50}
-          />
-        </div>
+    <>
+      <Head>
+        <title>Your Digital Business Name</title>
+        <meta name="description" content="Landing page for a digital business venture focusing on web and app development and ad management." />
+        {/* Add any additional tags for SEO and linking your CSS/JS here */}
+      </Head>
+
+      {/* Header Section */}
+      <header className="bg-white border-b border-gray-200">
+        <nav className="container mx-auto flex justify-between items-center py-4">
+          {/* Logo */}
+          <div>
+            <a href="#" className="text-lg font-bold">YourDigitalBusiness</a>
+          </div>
+          {/* Navigation Menu */}
+          <div>
+            <a href="#services" className="text-gray-600 hover:text-gray-900 px-4">Services</a>
+            <a href="#portfolio" className="text-gray-600 hover:text-gray-900 px-4">Portfolio</a>
+            <a href="#contact" className="text-gray-600 hover:text-gray-900 px-4">Contact</a>
+          </div>
+        </nav>
       </header>
 
-      <main className="container mx-auto py-12">
-        <section className="hero flex flex-col md:flex-row w-full items-center">
-          <div className="hero-content md:w-1/2 text-center md:text-left">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Digital Issue Solvers</h1>
-            <p className="text-2xl text-gray-600 mb-8">Simplify your digital journey with our expert solutions.</p>
-            <a href="#" className="bg-blue-500 text-white rounded-lg py-2 px-6 inline-block text-lg font-semibold hover:bg-blue-600 transition duration-300">Get Started</a>
-          </div>
-
-          <div className="md:w-1/2 mb-4">
-            <Image
-              src="/hero-image.jpg"
-              alt="Hero Image"
-              width={600}
-              height={400}
-              layout="responsive"
-              className="rounded-md"
-            />
+      {/* Main Content */}
+      <main>
+        {/* Hero Section */}
+        <section className="text-center bg-gray-50 py-20">
+          <div className="container mx-auto">
+            <h1 className="text-5xl font-bold text-gray-800 mb-6">Crafting Digital Experiences That Drive Results</h1>
+            <p className="text-xl text-gray-600 mb-8">Bespoke Website and App Development with Integrated Ad Management to Elevate Your Business.</p>
+            <a href="#contact" className="bg-blue-600 text-white font-bold py-3 px-6 rounded-full text-lg">Get Started</a>
           </div>
         </section>
 
-        <section className="problem-solution flex flex-col md:flex-row w-full mt-12">
-          <div className="w-full md:w-1/2 bg-gray-200 p-4 rounded-md mb-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">The Problem</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              In today's digital world, businesses face a myriad of challenges, from maintaining website security and managing social media presence to optimizing search engine rankings.
-            </p>
-          </div>
+        {/* Services Section */}
+        <section id="services" className="container mx-auto py-20">
+          {/* Website Development */}
+          <div className="flex flex-wrap -mx-4">
+            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-3">Website Development</h3>
+              <p className="text-gray-600 mb-5">Custom designs, e-commerce solutions, and responsive websites tailored to your business needs.</p>
+              <a href="#contact" className="bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
+            </div>
 
-          <div className="w-full md:w-1/2 bg-blue-200 p-4 rounded-md mb-4">
-            <h2 className="text-3xl font-bold text-white mb-4">The Solution</h2>
-            <p className="text-lg text-white leading-relaxed">
-              Our team of experts is here to alleviate your digital burdens. We provide comprehensive solutions tailored to your specific needs and budget, ensuring your digital presence thrives.
-            </p>
+            {/* App Development */}
+            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-3">App Development</h3>
+              <p className="text-gray-600 mb-5">Creating high-performance iOS and Android apps to engage your customers on the go.</p>
+              <a href="#contact" className="bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
+            </div>
+
+            {/* Ad Management */}
+            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-3">Ad Management</h3>
+              <p className="text-gray-600 mb-5">Strategic ad campaigns that convert viewers into customers and drive business growth.</p>
+              <a href="#contact" className="bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
+            </div>
           </div>
         </section>
 
-        <section className="benefits mt-12">
-          <h2 className="text-3xl font-bold mb-4 text-center">Benefits</h2>
-          <ul className="list-none flex flex-col items-center">
-            <li className="mb-4 bg-gray-200 p-4 rounded-md flex items-center">
-              <Image
-                src="/check-icon.png"
-                alt="Check Icon"
-                width={24}
-                height={24}
-              />
-              <p className="text-lg text-gray-600 leading-relaxed ml-2">Expert Guidance: Access a team of seasoned professionals who understand your digital challenges and can provide tailored solutions.</p>
-            </li>
-            <li className="mb-4 bg-blue-200 p-4 rounded-md flex items-center">
-              <Image
-                src="/check-icon.png"
-                alt="Check Icon"
-                width={24}
-                height={24}
-              />
-              <p className="text-lg text-white leading-relaxed ml-2">Custom Solutions: We don't believe in one-size-fits-all approaches. We craft solutions that align with your unique business goals and budget.</p>
-            </li>
-            <li className="mb-4 bg-gray-200 p-4 rounded-md flex items-center">
-              <Image
-                src="/check-icon.png"
-                alt="Check Icon"
-                width={24}
-                height={24}
-              />
-              <p className="text-lg text-gray-600 leading-relaxed ml-2">Peace of Mind: Focus on running your business while our experts handle your digital needs, ensuring your online presence flourishes.</p>
-            </li>
-          </ul>
+        {/* Portfolio Section */}
+        <section id="portfolio" className="bg-gray-100 py-20">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">Our Work</h2>
+            {/* Include images and links to your past work */}
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="container mx-auto py-20">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">Start Your Project</h2>
+            <p className="text-gray-600 mb-8">Ready to get started? Contact us now for a free quote.</p>
+          </div>
+          <form className="w-full max-w-lg mx-auto mt-8">
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
+                  Name
+                </label>
+                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane Doe" />
+              </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
+                  Email
+                </label>
+                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="email@example.com" />
+              </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
         </section>
       </main>
 
-      <footer className="bg-white py-4">
-        <div className="container mx-auto text-center">
-          &copy; 2023 Digital Issue Solvers
+      {/* Footer Section */}
+      <footer className="bg-white border-t border-gray-200">
+        <div className="container mx-auto py-8">
+          <div className="flex -mx-4">
+            <div className="px-4">
+              {/* Footer content here, like links or contact information */}
+              <p className="text-gray-600 text-sm text-center sm:text-left">© YourDigitalBusiness 2023</p>
+            </div>
+            {/* Social links */}
+            <div className="flex justify-center sm:justify-end px-4">
+              {/* Icons and links to your social media */}
+            </div>
+          </div>
         </div>
       </footer>
-    </div>
-  );
-};
-
-export default Landing;
+    </>
+  )
+}
