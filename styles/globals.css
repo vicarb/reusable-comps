@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .slick-prev, .slick-next {
-    font-size: 30px;
+    font-size: 36px;
     line-height: 1;
     color: #c41b1b;
   }
