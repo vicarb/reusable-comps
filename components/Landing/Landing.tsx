@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Landing() {
   return (
@@ -29,9 +30,10 @@ export default function Landing() {
       <main>
         {/* Hero Section */}
         <section className="text-center bg-gray-50 py-20">
-          <div className="container mx-auto">
+          <div className="container mx-auto items-center">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">Crafting Digital Experiences That Drive Results</h1>
             <p className="text-xl text-gray-600 mb-8">Bespoke Website and App Development with Integrated Ad Management to Elevate Your Business.</p>
+           
             <a href="#contact" className="bg-blue-600 text-white font-bold py-3 px-6 rounded-full text-lg">Get Started</a>
           </div>
         </section>
@@ -41,6 +43,12 @@ export default function Landing() {
           {/* Website Development */}
           <div className="flex flex-wrap -mx-4">
             <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+            <Image
+              src="https://picsum.photos/id/1005/200/200" 
+              alt="Descriptive Alt Text"
+              width={250}  
+              height={200} 
+            />
               <h3 className="text-2xl font-bold text-gray-800 mb-3">Website Development</h3>
               <p className="text-gray-600 mb-5">Custom designs, e-commerce solutions, and responsive websites tailored to your business needs.</p>
               <a href="#contact" className="bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
@@ -48,6 +56,12 @@ export default function Landing() {
 
             {/* App Development */}
             <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+            <Image
+              src="https://picsum.photos/id/1005/200/200" 
+              alt="Descriptive Alt Text"
+              width={250}  
+              height={200} 
+            />
               <h3 className="text-2xl font-bold text-gray-800 mb-3">App Development</h3>
               <p className="text-gray-600 mb-5">Creating high-performance iOS and Android apps to engage your customers on the go.</p>
               <a href="#contact" className="bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
@@ -55,6 +69,12 @@ export default function Landing() {
 
             {/* Ad Management */}
             <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+            <Image
+              src="https://picsum.photos/id/1005/200/200" 
+              alt="Descriptive Alt Text"
+              width={250}  
+              height={200} 
+            />
               <h3 className="text-2xl font-bold text-gray-800 mb-3">Ad Management</h3>
               <p className="text-gray-600 mb-5">Strategic ad campaigns that convert viewers into customers and drive business growth.</p>
               <a href="#contact" className="bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
@@ -120,5 +140,5 @@ export default function Landing() {
         </div>
       </footer>
     </>
-  )
+  );
 }
