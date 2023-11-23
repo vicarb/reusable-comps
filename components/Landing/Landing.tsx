@@ -43,12 +43,14 @@ export default function Landing() {
           {/* Website Development */}
           <div className="flex flex-wrap -mx-4">
             <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <Image
-              src="https://picsum.photos/id/1005/200/200" 
-              alt="Descriptive Alt Text"
-              width={250}  
-              height={200} 
-            />
+            <div className="relative" style={{ height: '200px' }}>
+  <Image
+    src="https://picsum.photos/id/1005/200/200"
+    alt="Descriptive Alt Text"
+    layout="fill"
+    objectFit="cover" // or 'contain', 'fill', etc.
+  />
+</div>
               <h3 className="text-2xl font-bold text-gray-800 mb-3">Website Development</h3>
               <p className="text-gray-600 mb-5">Custom designs, e-commerce solutions, and responsive websites tailored to your business needs.</p>
               <a href="#contact" className="bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
@@ -57,11 +59,11 @@ export default function Landing() {
             {/* App Development */}
             <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
             <Image
-              src="https://picsum.photos/id/1005/200/200" 
-              alt="Descriptive Alt Text"
-              width={250}  
-              height={200} 
-            />
+            src="https://picsum.photos/id/1005/200/200"
+            alt="Descriptive Alt Text"
+            layout="fill"
+            objectFit="cover" // or 'contain', 'fill', etc.
+          />
               <h3 className="text-2xl font-bold text-gray-800 mb-3">App Development</h3>
               <p className="text-gray-600 mb-5">Creating high-performance iOS and Android apps to engage your customers on the go.</p>
               <a href="#contact" className="bg-green-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
@@ -70,10 +72,10 @@ export default function Landing() {
             {/* Ad Management */}
             <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
             <Image
-              src="https://picsum.photos/id/1005/200/200" 
+              src="https://picsum.photos/id/1005/200/200"
               alt="Descriptive Alt Text"
-              width={250}  
-              height={200} 
+              layout="fill"
+              objectFit="cover" // or 'contain', 'fill', etc.
             />
               <h3 className="text-2xl font-bold text-gray-800 mb-3">Ad Management</h3>
               <p className="text-gray-600 mb-5">Strategic ad campaigns that convert viewers into customers and drive business growth.</p>
