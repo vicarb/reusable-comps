@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import OurWork from '../OurWork/OurWork';
-
+import ContactSection from '../ContactSection/ContantSection';
 export default function Landing() {
   return (
     <>
@@ -93,35 +93,8 @@ export default function Landing() {
 
         {/* Contact Section */}
         <section id="contact" className="container mx-auto py-20">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Start Your Project</h2>
-            <p className="text-gray-600 mb-8">Ready to get started? Contact us now for a free quote.</p>
-          </div>
-          <form className="w-full max-w-lg mx-auto mt-8">
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full px-3">
-                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
-                  Name
-                </label>
-                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane Doe" />
-              </div>
-            </div>
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full px-3">
-                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
-                  Email
-                </label>
-                <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="email@example.com" />
-              </div>
-            </div>
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full px-3">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </form>
+       
+        <ContactSection/>
         </section>
       </main>
 
