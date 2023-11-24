@@ -51,7 +51,7 @@ const Swipe = () => {
       slidesPerView={1}
       loop={true}
       navigation
-      pagination={{ clickable: true }}
+
 
       breakpoints={{
         499: {
