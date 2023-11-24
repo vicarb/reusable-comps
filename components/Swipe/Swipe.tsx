@@ -15,7 +15,34 @@ const LoadingSpinner = () => (
 );
 
 const Swipe = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  // Array of objects for each slide
+  const slides = [
+    {
+      id: 1,
+      title: "Title 1",
+      imageUrl: "https://picsum.photos/800/600?random=1",
+      description: "Description for Image 1"
+    },
+    {
+      id: 4,
+      title: "Title 3",
+      imageUrl: "https://picsum.photos/800/600?random=1",
+      description: "Description for Image 1"
+    },
+    {
+      id: 4,
+      title: "Title 4",
+      imageUrl: "https://picsum.photos/800/600?random=1",
+      description: "Description for Image 1"
+    },
+    {
+      id: 2,
+      title: "Title 2",
+      imageUrl: "https://picsum.photos/800/600?random=2",
+      description: "Description for Image 2"
+    },
+    // Add more slides as needed
+  ];
 
   return (
     <Swiper
@@ -25,7 +52,7 @@ const Swipe = () => {
       loop={true}
       navigation
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
+
       breakpoints={{
         499: {
           slidesPerView: 1,
@@ -41,19 +68,20 @@ const Swipe = () => {
         }
       }}
     >
-      {[1, 2, 3, 4].map((num) => (
-        <SwiperSlide key={num}>
-          <div style={{ borderRadius: '5px', overflow: 'hidden' }}>
-            {isLoading && <LoadingSpinner />}
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.id}>
+          <div className="slide-content">
             <Image 
-              alt={`Image ${num}`} 
-              src={`https://picsum.photos/800/600?random=${num}`} 
+              alt={slide.title} 
+              src={slide.imageUrl} 
               width={800} 
               height={600} 
               layout="responsive"
-              onLoading={() => setIsLoading(true)}
-              onLoad={() => setIsLoading(false)}
             />
+            <div className="text-center mt-4">
+              <h3 className="text-2xl font-bold">{slide.title}</h3>
+              <p>{slide.description}</p>
+            </div>
           </div>
         </SwiperSlide>
       ))}
